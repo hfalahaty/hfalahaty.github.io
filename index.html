@@ -1,13 +1,241 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
-  
+        <title>Challenge: Links you love</title>   
+        <style>
+/***********body********/
+            body{
+                background-color: white;
+                margin: 0px 0px 0px 0px;
+            }
+            #home{
+                height: 0px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+
+/***********header********/
+            .site-title{
+                color: white;
+                font: times;
+                font-size: 30px;
+                padding: inherit;
+                padding-left: 30px;
+                text-align-last: center;
+                line-height: 2;
+            }
+            .header-top{
+                background-color: black;
+                height: 8%;
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                display:flex;
+                align-items:center;
+            }
+            #header-mypicture{
+                float: right;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            #ul-menubar{
+                padding: 150px;
+            }
+/*****list item show horizentaly as menu bar*****/
+            #ul-menubar {
+                list-style-type: none;
+                overflow: hidden;
+                background-color: black;
+            }
+            .li-menubar {
+                float: left;
+            }
+            .li-menubar a {
+                font-size: 20px;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;                                                
+            }
+            .li-menubar a:hover {
+                color: red;
+                background-color: #333333;
+            } 
+/*****main page******/
+            .page-main{
+                background-color: white;
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                height: 92%;
+                overflow-y: scroll;
+            }
+            .first-main{
+                background-image:linear-gradient(dimgray, black);
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                height: 97%;
+            }
+            .thyreghod-camp{
+                width: 100%;
+            }
+            #main-sentence{
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration:underline;             
+            }
+/*****middle page******/
+            .middle-page{
+                height:auto;
+                margin: 100px 50px 50px 50px;
+            }
+            #biography-image{
+                margin-right: 15px;
+                width: 40%;
+                float: left;
+            }           
+            #resume-image{
+                margin-right: 15px;
+                width: 40%;
+                float: right;
+            }
+            #project-image{
+                margin-right: 15px;
+                width: 40%;
+                float:left;
+            }
+            .first-letter{
+                margin: 0px 0px 0px 0px;
+                border: 0px 0px 0px 0px;
+                padding: 0px 20px 0px 20px;
+                font-size: 100px;
+                color: black;
+                text-align: center;
+                float: left;
+            }
+            .p-text{
+                margin: 0px 50px 0px 10px;
+                font-size: 20px;
+                font-family: cursive;
+                color: black;
+            }
+/*****footer******/
+            #last-picture{
+                position:relative;
+                left: 20%;
+                width: 300px;
+                border-radius: 50%;
+            }
+            .footer{
+                background-color: black;
+                height: 45%;
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                display:flex;
+                align-items:center;
+            }
+            #footer-text{
+                font-size: 15px;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;  
+            }
+        </style>
     </head>
     <body>
-<a target="_blank" href="blog.html">blog</a><br>
-<a target="_blank" href="travel.html">travel</a><br>
-<a target="_blank" href="recipe.html">recipe</a><br>
+ <!--header of web page-->
+        <div class="header-top" id="top">
+            <img id="header-mypicture" src="https://i.ibb.co/M68v8dZ/446529050-212501.jpg" alt="Hashem falahati marvast picture">
+            <p class="site-title">Hahsem Falahati Marvast</p>
+<!-- list item show horizentaly as menu bar-->           
+            <ul id="ul-menubar">
+                <li class="li-menubar"><a href="#home">Home</a></li>
+                <li class="li-menubar"><a href="#biography-id">Biography</a></li>
+                <li class="li-menubar"><a href="#resume-id">Resume(CV)</a></li>
+                <li class="li-menubar"><a href="#project-id">Project</a></li>
+                <li class="li-menubar"><a href="#contact-table">Contact</a></li>
+            </ul>
+        </div>
+<!-- main page-->           
+        <div class="page-main">
+            <div class="first-main">
+<!--only the key to returning up-->
+                <p id="home"></p>
+                <img class="thyreghod-camp" src="https://i.ibb.co/Tck6p8F/thyregod.png" alt="thyregod">
+                <h1 id="main-sentence">I do not regret the things I’ve done,<br> but those I did’t do when I had the chance<br><br>So I want to try hard for my next chance</h1>
+            </div>
+<!-- biography-->           
+            <div class="middle-page">
+                <img id="biography-image" src="https://i.ibb.co/G3tbpVS/IMG-20171221-213627.jpg" alt="hashem falahaty marvast family">
+                <p class="first-letter" id="biography-id">I</p>
+                <p class="p-text">do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
+            </div>
+
+<!-- resume-->           
+            <div class="middle-page">
+                <img id="resume-image" src="https://i.ibb.co/rdkPmPb/IMG-20180109-180049.jpg" alt="hashem falahaty marvast family">
+                <p class="first-letter" id="resume-id">I</p>
+                <p class="p-text">do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
+            </div>
+<!-- project-->           
+            <div class="middle-page">
+                <img id="project-image" src="https://i.ibb.co/GxXMvZb/IMG-20180614-120218.jpg" alt="hashem falahaty marvast family">
+                <p class="first-letter" id="project-id">I</p>
+                <p class="p-text">
+                    do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
+                <ul class="p-text" id="ul-project">
+                    <li><a href="https://hfalahaty.github.io/blog.html" target="_blank">My First Blog</a></li>
+                    <li><a href="https://hfalahaty.github.io/recipe.html" target="_blank">Iranian Food Recipe</a></li>
+                    <li><a href="https://hfalahaty.github.io/travel.html" target="_blank">Travel to Greece(CV)</a></li>
+                    <li><a href="https://hfalahaty.github.io/event.html" target="_blank">Invitarion Letter</a></li>
+                </ul>
+            </div>
+<!-- Footer-->           
+            <div class="footer">
+                
+                <table class="site-title" id="contact-table">
+                  <tr>
+                    <th colspan="4">STAY IN TOUCH WITH ME</th>
+                  </tr>
+                  <tr>
+                      <td>
+                        <a href="https://www.facebook.com/hashem.marvast?ref=bookmarks" target="_blank" >
+                            <img src="https://i.ibb.co/8YX94Q2/facebook.png" alt="facebook icon" width="80px">
+                        </a>                      
+                      </td>
+                      <td>
+                        <a href="https://www.facebook.com/hashem.marvast?ref=bookmarks" target="_blank" >
+                            <img src="https://i.ibb.co/PWtPjvL/whatsapp.png" alt="whatsapp icon" width="80px">
+                        </a>                      
+                      </td>
+                      <td>
+                        <a href="https://www.facebook.com/hashem.marvast?ref=bookmarks" target="_blank" >
+                            <img src="https://i.ibb.co/T1tfhG7/instagram.png" alt="instagram icon" width="80px">
+                        </a>                      
+                      </td>
+                      <td>
+                        <a href="https://www.facebook.com/hashem.marvast?ref=bookmarks" target="_blank" >
+                            <img src="https://i.ibb.co/wCyfdSP/googple-plus.png" alt="googple-plus icon" width="80px">
+                        </a>                      
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">
+                        <a href="mailto: hfalahaty@gmail.com" target="_blank" >
+                            hfalahaty@gmail.com
+                        </a>                         
+                      </td>
+                  </tr>
+                </table>
+                <img id="last-picture" src="https://i.ibb.co/cFfRQBB/IMG-20181014-123343.jpg" alt="hashem falahati marvast & sina">
+           </div>       
+        </div>
+ 
     </body>
 </html>
