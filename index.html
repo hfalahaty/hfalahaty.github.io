@@ -15,7 +15,7 @@
             }
 
 /***********header********/
-            .site-title{
+            #site-title{
                 width: 45%;
                 color: white;
                 font: times;
@@ -64,53 +64,48 @@
             } 
 /*****main page******/
             .page-main{
-                background-color: white;
+                background-color:azure;
                 margin: 0px 0px 0px 0px;
                 padding: 0px;
-                height: 92%;
+                height: 100%;
                 overflow-y: scroll;
             }
             .first-main{
                 background-image:linear-gradient(dimgray, black);
                 margin: 0px 0px 0px 0px;
                 padding: 0px;
-                height: 97%;
+                height: 800px
             }
             .thyreghod-camp{
                 width: 100%;
             }
             .main-sentence{
-                font-size: 50px;
+                font-size: 4vw;
                 color: white;
                 text-align: center;
-                padding: 15px;
+                margin: 1%;
+                padding: 1%;
                 text-decoration:underline;             
             }
             h2.main-sentence{
                 color: red;
-                
             }
 /*****middle page******/
             .middle-page{
-                height:auto;
-                margin: 100px 50px 50px 50px;
+                height:50%;
+                margin: 50px 50px 50px 50px;
             }
-            #biography-image{
+            .left-image{
                 margin-right: 15px;
-                width: 40%;
+                height:60%;
                 float: left;
             }           
-            #resume-image{
+            .right-image{
                 margin-right: 15px;
-                width: 40%;
+                height:60%;
                 float: right;
             }
-            #project-image{
-                margin-right: 15px;
-                width: 40%;
-                float:left;
-            }
-            .first-letter{
+             .first-letter{
                 margin: 0px 0px 0px 0px;
                 border: 0px 0px 0px 0px;
                 padding: 0px 20px 0px 20px;
@@ -121,6 +116,12 @@
             }
             .p-text{
                 margin: 0px 50px 0px 10px;
+                font-size: 20px;
+                font-family: cursive;
+                color: black;
+            }
+           .outer-link{
+                text-align: right; 
                 font-size: 20px;
                 font-family: cursive;
                 color: black;
@@ -155,14 +156,14 @@
  <!--header of web page-->
         <div class="header-top" id="top">
             <img id="header-mypicture" src="https://i.ibb.co/M68v8dZ/446529050-212501.jpg" alt="Hashem falahati marvast picture">
-            <p class="site-title">Hahsem Falahati Marvast</p>
+            <p id="site-title">Hahsem Falahati Marvast</p>
 <!-- list item show horizentaly as menu bar-->           
             <ul id="ul-menubar">
                 <li class="li-menubar"><a href="#home">Home</a></li>
-                <li class="li-menubar"><a href="#biography-id">Biography</a></li>
-                <li class="li-menubar"><a href="#resume-id">Resume(CV)</a></li>
-                <li class="li-menubar"><a href="#project-id">Project</a></li>
-                <li class="li-menubar"><a href="#contact-table">Contact</a></li>
+                <li class="li-menubar"><a href="#My-Blog-id">My Blog</a></li>
+                <li class="li-menubar"><a href="#recipe-id">Food Recipe</a></li>
+                <li class="li-menubar"><a href="#Travel-id">Travel</a></li>
+                <li class="li-menubar"><a href="#Event-id">Event</a></li>
             </ul>
         </div>
 <!-- main page-->           
@@ -174,31 +175,40 @@
                     <h1 class="main-sentence">I do not regret the things I’ve done,<br> but those I did’t do when I had the chance</h1>
                     <h2 class="main-sentence">So I want to try hard for my next chance</h2>
             </div>
-<!-- biography-->           
+<!-- My-Blog-->           
             <div class="middle-page">
-                <img id="biography-image" src="https://i.ibb.co/G3tbpVS/IMG-20171221-213627.jpg" alt="hashem falahaty marvast family">
-                <p class="first-letter" id="biography-id">I</p>
-                <p class="p-text">do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
+                <h1  id="My-Blog-id"><a href="https://hfalahaty.github.io/blog.html" target="_blank">My First Blog</a></h1>
+                <a href="https://hfalahaty.github.io/blog.html" target="_blank"><img class="left-image" src="https://i.ibb.co/7YKtgbZ/blog.jpg" alt="hashem falahaty marvast blog"></a>
+                
+                <p class="first-letter">A</p>
+                <p class="p-text">"blog" (or "web log") is an online journal, which one or multiple people update on a frequent basis, like daily, weekly, or monthly. Many new programmers keep blogs to document their journey to becoming a programmer, with updates on what they've learned and what they've made.<br>
+                    There are many "blogging engines" out there, like WordPress and Blogger, but in this project, you'll make your own blog using HTML and CSS. It should have at least 2 entries, and the table of contents should internally link to each entry. Use CSS text properties to style your blog - like changing the font family, line height, and font styles of various sections.<br>If you like your blog, then you could use it to document your journey here - make it a featured project on your profile, then people that visit your profile will get to read about your journey!</p>
+                    <p class="outer-link"><a href="https://hfalahaty.github.io/blog.html" target="_blank">Click here to see My First Blog</a></p>
             </div>
 
-<!-- resume-->           
+<!-- recipe-->           
             <div class="middle-page">
-                <img id="resume-image" src="https://i.ibb.co/rdkPmPb/IMG-20180109-180049.jpg" alt="hashem falahaty marvast family">
-                <p class="first-letter" id="resume-id">I</p>
-                <p class="p-text">do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
+                <h1  id="recipe-id"><a href="https://hfalahaty.github.io/recipe.html" target="_blank">Iranian Food Recipe</a></h1>
+                <a href="https://hfalahaty.github.io/recipe.html" target="_blank"><img class="right-image" src="https://i.ibb.co/wK9P6kz/recipe.jpg" alt="hashem falahaty marvast recipe"></a>
+                <p class="first-letter">C</p>
+                <p class="p-text">reate a web page with your favorite recipes! The recipe book should have a table of contents linking to each recipe below, using internal links. Each recipe should have a table for the ingredients, a list of details, and a list and/or paragraphs of the steps required. If you use recipes from the internet, be sure to add a link to the website.<br>Use CSS to style the recipe book, using a mix of the simple selectors and colors that you've learned.<br>Tip: Can't find the images you want in our image selector? You can also bring in images from Wikipedia. To do that, use a site-restricted Google search, then click "View image" on the result you like, and copy the URL into your <img> tag.</p>
+                <p class="outer-link"><a href="https://hfalahaty.github.io/recipe.html" target="_blank">Click here to see Iranian Food Recipe</a></p>
             </div>
-<!-- project-->           
+<!-- Travel-->           
             <div class="middle-page">
-                <img id="project-image" src="https://i.ibb.co/GxXMvZb/IMG-20180614-120218.jpg" alt="hashem falahaty marvast family">
-                <p class="first-letter" id="project-id">I</p>
-                <p class="p-text">
-                    do not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve donedo not regret the things I’ve done</p>
-                <ul class="p-text" id="ul-project">
-                    <li><a href="https://hfalahaty.github.io/blog.html" target="_blank">My First Blog</a></li>
-                    <li><a href="https://hfalahaty.github.io/recipe.html" target="_blank">Iranian Food Recipe</a></li>
-                    <li><a href="https://hfalahaty.github.io/travel.html" target="_blank">Travel to Greece(CV)</a></li>
-                    <li><a href="https://hfalahaty.github.io/event.html" target="_blank">Invitarion Letter</a></li>
-                </ul>
+                <h1  id="Travel-id"><a href="https://hfalahaty.github.io/travel.html" target="_blank">Project: Travel</a></h1>
+                <a href="https://hfalahaty.github.io/travel.html" target="_blank"><img class="left-image" src="https://i.ibb.co/17hTYbQ/travel.jpg" alt="hashem falahaty marvast travel"></a>
+                <p class="first-letter">I</p>
+                <p class="p-text">n this project, you'll use everything you've learned so far to create a travel website enticing viewers to visit an exotic locale. You should have images of what they'll see, lists of things to see and places to go, and paragraphs of enticing details. You should also use CSS to style the website, using a mix of the simple selectors you've learned.<br>Tip: Can't find the images you want in our image selector? You can also bring in images from Wikipedia. To do that, use a site-restricted Google search, then click "View image" on the result you like, and copy the URL into your <img> tag.</p>
+                <p class="outer-link"><a href="https://hfalahaty.github.io/travel.html" target="_blank">Click here to see Travel Project</a></p>
+            </div>
+<!-- Event-->           
+            <div class="middle-page">
+                <h1  id="Event-id"><a href="https://hfalahaty.github.io/event.html" target="_blank">Invitarion Letter</a></h1>
+                <a href="https://hfalahaty.github.io/event.html" target="_blank"><img class="right-image" src="https://i.ibb.co/5jmGXC3/event.jpg" alt="hashem falahaty marvast event"></a>
+                <p class="first-letter">I</p>
+                <p class="p-text">n this project, you'll make an event invite for an event- a party, a workshop, a wedding, whatever you want. It should have event title, details, and maybe it'd have a guest list or RSVP button.<br>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.<br>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
+                <p class="outer-link"><a href="https://hfalahaty.github.io/event.html" target="_blank">Click here to see Invitarion Letter</a></p>
             </div>
 <!-- Footer-->           
             <div class="footer">
